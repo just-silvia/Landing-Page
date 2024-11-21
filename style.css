@@ -4,6 +4,7 @@
     --bacground-color: #FBFBFB;
     --main-font: 4rem;
     --h2-font:2.24rem;
+    --big-font: 4rem;
 }
 
 .poppins-regular {
@@ -23,5 +24,26 @@
 
 .navbar{
     display: flex;
-    
 }
+
+.section{
+    padding: 50px 10%;
+}
+
+.home{
+    width: 100%;
+    display: grid;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.title{
+    color: var(--main-color);
+    font-size: var(--big-font);
+}
+
+.text{
+    color: var(--text-color);
+    font-size: var(--h2-font);
+}
+
