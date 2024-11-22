@@ -1,49 +1,82 @@
-:root{
+:root {
     --main-color: #FFB411;
     --text-color: #1E1C2A;
-    --bacground-color: #FBFBFB;
     --main-font: 4rem;
     --h2-font:2.24rem;
     --big-font: 4rem;
+    --border-radius: 0.5rem;
+    --background-color: #FBFBFB;
 }
 
-.poppins-regular {
+* {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
   }
-  
 
-*{
+.main {
+    background-color: #FBFBFB;
+  }
+
+.container {
+    max-width: 1450px;
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    cursor: pointer;
+    font-size: 25px;
+    justify-content: space-between;
+}
+
+.ul {
     list-style: none;
-    text-decoration: none;
 }
 
-.navbar{
-    display: flex;
-}
-
-.section{
+.section {
     padding: 50px 10%;
 }
 
-.home{
-    width: 100%;
-    display: grid;
-    align-items: center;
-    gap: 1.5rem;
+.home {
+    height: 100vh;
 }
 
-.title{
-    color: var(--main-color);
+.home .container {
+    display: flex;
+}
+
+.home-left,
+.home-img {
+    width: 50%;
+}
+
+.home-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.home-left h1 {
     font-size: var(--big-font);
+    color: var(--main-color);
 }
 
-.text{
-    color: var(--text-color);
-    font-size: var(--h2-font);
+.home-left a {
+    background-color: var(--background-color);
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+}
+
+.home-img {
+    width: 100%;
+    height: 100%;
 }
 
